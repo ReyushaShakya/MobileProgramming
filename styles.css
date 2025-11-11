@@ -1,0 +1,43 @@
+body {
+  background-color: pink;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: powderblue;
+}
+
+#resultBox {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  min-width: 300px;
+  font-weight: bold;
+  text-align: left;
+  background-color: #fff8b0;
+}
+
+input, select, button {
+  margin: 5px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.addBtn { background-color: green; }
+.subtractBtn { background-color: red; }
+.multiplyBtn { background-color: blue; }
+.divideBtn { background-color: purple; }
+
+.resultText {
+  margin: 5px 0;
+}

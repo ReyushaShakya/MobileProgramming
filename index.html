@@ -1,3 +1,36 @@
 <!DOCTYPE html>
-<html></html>
-<html></html>
+<html>
+<head>
+  <title>Fun Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Fun Calculator!</h1>
+
+  <!-- Number inputs -->
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number"><br>
+
+  <!-- Operation buttons -->
+  <button class="addBtn" onclick="calculate('add')">Add +</button>
+  <button class="subtractBtn" onclick="calculate('subtract')">Subtract -</button>
+  <button class="multiplyBtn" onclick="calculate('multiply')">Multiply *</button>
+  <button class="divideBtn" onclick="calculate('divide')">Divide /</button><br>
+
+  <!-- Font controls -->
+  <label>Font Size:</label>
+  <input type="number" id="fontSize" value="16" onchange="updateStyles()">
+  <label>Font Style:</label>
+  <select id="fontStyle" onchange="updateStyles()">
+    <option value="Arial">Arial</option>
+    <option value="Courier New">Courier New</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Verdana">Verdana</option>
+  </select>
+
+  <!-- Result box -->
+  <div id="resultBox">Results will appear here:</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
